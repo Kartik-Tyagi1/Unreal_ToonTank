@@ -20,7 +20,7 @@ public:
 protected:
 	// These next two functions will be called in the child classes
 	// They will not be overidden
-	void RotateTurretFunction(FVector LookAtTarget);
+	void RotateTurret(FVector LookAtTarget);
 	void Fire();
 
 	// The virtual keyword tells the compiler that this function will be overidden
