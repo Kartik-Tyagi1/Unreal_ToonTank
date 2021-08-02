@@ -20,6 +20,16 @@
 		"directory": "C:\\Program Files\\UE_4.26\\Engine\\Source"
 	},
 	{
+		"file": "C:\\\\Dev\\\\Unreal Projects\\\\ToonTanks\\\\Source\\\\ToonTanks\\\\Pawn\\\\PawnTurret.cpp",
+		"command": "cl.exe @\"C:\\Dev\\Unreal Projects\\ToonTanks\\.vscode\\compileCommands_Default\\ToonTanks.182.rsp\"",
+		"directory": "C:\\Program Files\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\Unreal Projects\\\\ToonTanks\\\\Source\\\\ToonTanks\\\\Pawn\\\\PawnTurret.h",
+		"command": "cl.exe @\"C:\\Dev\\Unreal Projects\\ToonTanks\\.vscode\\compileCommands_Default\\ToonTanks.182.rsp\"",
+		"directory": "C:\\Program Files\\UE_4.26\\Engine\\Source"
+	},
+	{
 		"file": "C:\\\\Dev\\\\Unreal Projects\\\\ToonTanks\\\\Source\\\\ToonTanks\\\\ToonTanks.Build.cs",
 		"command": "cl.exe @\"C:\\Dev\\Unreal Projects\\ToonTanks\\.vscode\\compileCommands_Default\\ToonTanks.182.rsp\"",
 		"directory": "C:\\Program Files\\UE_4.26\\Engine\\Source"
