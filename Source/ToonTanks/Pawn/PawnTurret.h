@@ -11,6 +11,9 @@
  * 		- Checks if player tank is in certain range
  * 		- Turret will then fire every n seconds
  */
+
+class APawnTank;
+
 UCLASS()
 class TOONTANKS_API APawnTurret : public APawnBase
 {
@@ -28,9 +31,17 @@ protected:
 private:
 	void CheckFireCondition();
 
+	float ReturnDistanceToPlayer();
+
 private:
 	FTimerHandle FireRateTimerHandle; // Bind and unbind a timer for the fire rate
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	float FireRate = 2.f;
+
+	APawnTank* PlayerPawn;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	float FireRange = 500.f;
+
 };
