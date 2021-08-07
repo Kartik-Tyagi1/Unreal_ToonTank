@@ -56,7 +56,7 @@ void APawnBase::Fire()
 		TempProjectile->SetOwner(this); // Prevents projectile from damaging the object it came from
 	}
 
-	UE_LOG(LogTemp, Warning, TEXT("Fire Condition Success"));
+	// UE_LOG(LogTemp, Warning, TEXT("Fire Condition Success"));
 
 }
 

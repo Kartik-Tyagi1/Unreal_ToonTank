@@ -18,15 +18,15 @@ public:
 	// Sets default values for this pawn's properties
 	APawnBase();
 
+	// The virtual keyword tells the compiler that this function will be overidden
+	// Helpful for any error messages and more
+	virtual void HandleDestruction();
+
 protected:
 	// These next two functions will be called in the child classes
 	// They will not be overidden
 	void RotateTurret(FVector LookAtTarget);
 	void Fire();
-
-	// The virtual keyword tells the compiler that this function will be overidden
-	// Helpful for any error messages and more
-	virtual void HandleDestruction();
 
 	
 private:
