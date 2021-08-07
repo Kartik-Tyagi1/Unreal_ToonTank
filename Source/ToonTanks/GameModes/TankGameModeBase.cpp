@@ -15,6 +15,8 @@ void ATankGameModeBase::ActorDied(AActor* DeadActor)
     // Check what type of actor has died
     // If turret died increase kill count
     // If player died go to lose condition
+    UE_LOG(LogTemp, Warning, TEXT("Pawn has died"));
+
 }
 
 void ATankGameModeBase::HandleGameStart() 
