@@ -28,6 +28,11 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent) // Handle function implementation in derived blueprint class
 	void GameOver(bool PlayerWon);
 
+	// EditDefaultsOnly -> Can be changed in defaults window in the blueprint window
+	// BlueprintReadOnly -> Cannot use a blueprint node to set the value of the variable
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Game Loop")
+	int32 StartDelay = 3;
+
 private:
 	// Handle C++ side of the game flow
 	// Will be calling the blueprint GameStart and GameOver functions
