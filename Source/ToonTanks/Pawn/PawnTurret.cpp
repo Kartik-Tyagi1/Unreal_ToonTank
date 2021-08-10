@@ -50,11 +50,11 @@ void APawnTurret::CheckFireCondition()
     // If player is valid and isnt dead then fire
     // SORT OF OKAY WAY ---> if(UGameplayStatics::GetPlayerPawn(this, 0))
    
-   if(!PlayerPawn)
+   if(!PlayerPawn || !PlayerPawn->GetIsPlayerAlive())
        return;
 
 
-    // If player is in range then fire
+    // If player is in range and alive then fire
     if(ReturnDistanceToPlayer() <= FireRange)
         Fire();
 }
